@@ -1,4 +1,4 @@
-const fruits = ["apple", "banana", "oragne", "plam", "water mellon"];
+const fruits = ["Apple", "banana", "oragne", "plam", "water mellon"];
 
 for (let fruit of fruits) {
   console.log(fruit);
