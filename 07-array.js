@@ -9,4 +9,5 @@ console.log(fruits);
 
 
 console.log(fruits);
+console.log(fruits.slice(0));
 
