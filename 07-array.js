@@ -8,5 +8,6 @@ fruits.push("Mango", "Blackberry");
 console.log(fruits);
 
 console.log(fruits);
+console.log(fruits.slice(0));
 
 console.log(fruits.slice(0, 4));
