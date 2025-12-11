@@ -30,7 +30,7 @@ class Deque {
 
   // Check if deque is empty
   isEmpty() {
-    return this.#a.length === 0;
+    return !this.#a.length;
   }
 
   // Get front item

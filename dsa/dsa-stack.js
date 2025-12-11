@@ -9,7 +9,7 @@ class Stack {
 
   // Pop element from stack
   pop() {
-    if (this.isEmpty()) return undefined;
+    if (this.isEmpty()) return null;
 
     this.#recentPopedItem = this.#a.pop();
     return this.#recentPopedItem;
@@ -17,12 +17,12 @@ class Stack {
 
   // Check if stack is empty
   isEmpty() {
-    return this.#a.length === 0;
+    return !this.#a.length;
   }
 
   // Get top item
   top() {
-    if (this.isEmpty()) return undefined;
+    if (this.isEmpty()) return null;
     return this.#a[this.#a.length - 1];
   }
 
@@ -35,6 +35,11 @@ class Stack {
   size() {
     return this.#a.length;
   }
+
+  // Print Stack Function
+  print() {
+    for (const val of this.#a) console.log(val);
+  }
 }
 
 const st = new Stack();
@@ -45,7 +50,6 @@ st.push(50);
 st.push(2);
 
 // print stack
-while (!st.isEmpty()) {
-  console.log(st.top());
-  st.pop();
-}
+st.print();
+
+st.print();
